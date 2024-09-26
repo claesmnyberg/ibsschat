@@ -1,0 +1,9 @@
+-=[ 1.2
+
+-=[ 1.1
+Removed the randomized delay before forwarding
+Added .ver command to chat client 
+Changed forwarding to allways for the first four times when a message is seen
+
+-=[ 1.0 
+Initial Release

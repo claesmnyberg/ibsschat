@@ -1,0 +1,4 @@
+
+Time multi-hop 100 (1000 buffer): 0m59.78s real     0m0.06s user     0m0.29s system
+Time multi-hop 30: 0m15.57s real     0m0.04s user     0m0.09s system
+Time multi-hop 100: 0m54.32s real     0m0.06s user     0m0.26s system 

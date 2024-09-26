@@ -1,0 +1,73 @@
+
+Line configuration
+1 - 2 - 3 - 4 - 5 - 6
+
+ACK required, 10 retransmissions
+forward seen 10 with decreasing probability (1/1, 1/2, 1/3, ...)
+150 messages from each host with X sec delay between
+(total of 906 messages for each host)
+
+Host| 0s  | 1s  | 2s  |
+----+-----+-----+-----+
+ 1  | 856 | 866 | 887 |
+ 2  | 866 | 880 | 896 |
+ 3  | 877 | 882 | 903 |
+ 4  | 854 | 873 | 899 |
+ 5  | 851 | 874 | 894 |
+ 6  | 840 | 874 | 888 |
+avg |857.3|874.8|894.5| (received msgs)
+avg%|05.38|03.44|01.26| (dropped)
+
+NO ACK required, 10 retransmissions
+forward seen 10 with decreasing probability (1/1, 1/2, 1/3, ...)
+150 messages from each host with X sec delay between
+(total of 906 messages for each host)
+
+Host| 0s  | 1s  | 2s  | 
+----+-----+-----+-----+
+ 1  | 332 | 801 | 836 |
+ 2  | 321 | 800 | 840 |
+ 3  | 279 | 832 | 847 |
+ 4  | 260 | 834 | 843 |
+ 5  | 268 | 828 | 842 |
+ 6  | 353 | 827 | 845 | 
+avg |302.2|820.3|842.2| (received msgs)
+avg%|66.64|09.46|07.04| (dropped)
+
+----------------------------------------------------------
+----------------------------------------------------------
+
+Full mesh (all hosts see each other)
+
+ACK required, 10 retransmissions
+forward seen 10 with decreasing probability (1/1, 1/2, 1/3, ...)
+150 messages from each host with X sec delay between
+(total of 906 messages for each host)
+
+Host| 0s  | 1s  | 2s  | 3s
+----+-----+-----+-----+-----------------
+ 1  | 906 | 906 | 906 |
+ 2  | 906 | 906 | 906 |
+ 3  | 906 | 906 | 906 |
+ 4  | 906 | 906 | 906 |
+ 5  | 906 | 906 | 906 |
+ 6  | 906 | 906 | 906 |
+avg | 906 | 906 | 906 | (received msgs)
+avg%|00.00|00.00|00.00| (dropped)
+
+NO ACK required, 10 retransmissions
+forward seen 10 with decreasing probability (1/1, 1/2, 1/3, ...)
+150 messages from each host with X sec delay between
+(total of 906 messages for each host)
+
+Host| 0s  | 1s  | 2s  | 
+----+-----+-----+-----+
+ 1  | 300 | 814 | 885 |
+ 2  | 319 | 795 | 884 |
+ 3  | 329 | 818 | 891 |
+ 4  | 304 | 801 | 888 |
+ 5  | 331 | 811 | 884 |
+ 6  | 365 | 818 | 891 |
+avg |324.7|809.5|887.2| (received msgs) 
+avg%|64.16|10.65|02.07| (dropped)
+

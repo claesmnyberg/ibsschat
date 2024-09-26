@@ -1,0 +1,1 @@
+adb -s 41002d8cf2a3323d logcat | awk '/ibsschat:/{ for(i=6;i<=NF;++i) printf " " $i; printf "\n" }'
